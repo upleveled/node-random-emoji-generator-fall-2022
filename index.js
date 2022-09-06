@@ -7,7 +7,7 @@ import { argv } from 'node:process';
 import emoji from 'node-emoji';
 
 // Condition 1: if we find the emoji
-if (argv[2] && emoji.find(argv[2])) {
+if (argv[2] && emoji.find(argv[2]).length) {
   console.log(emoji.get(argv[2]));
 } else if (argv[2]) {
   // Condition 2: if an argument is passed
