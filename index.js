@@ -6,13 +6,13 @@ import { argv } from 'node:process';
 // ES6 syntax
 import emoji from 'node-emoji';
 
-// condition 1: if we find the emoji
+// Condition 1: if we find the emoji
 if (argv[2] && emoji.find(argv[2])) {
   console.log(emoji.get(argv[2]));
-  // condition 2: if an argument is passed
 } else if (argv[2]) {
+  // Condition 2: if an argument is passed
   console.log(`emoji ${argv[2]} couldn't be found`);
-  // default value
 } else {
+  // Default value
   console.log(emoji.random().emoji);
 }
