@@ -24,5 +24,5 @@ When a user enters an incorrect emoji name, show an error message:
 
 ```bash
 $ node index.js cryy
-Invalid emoji
+emoji cryy couldn't be found
 ```
